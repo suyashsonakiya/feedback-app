@@ -8,7 +8,7 @@ export function Home() {
       <div className="flex flex-col gap-5 sm:gap-10">
         <Navbar />
 
-        <div className="p-4 w-full z-10 relative text-center mt-10 sm:mt-20">
+        <div className="p-4 w-full z-10 relative text-center mt-10 sm:mt-28">
           <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Your Feedback Matters
           </h1>

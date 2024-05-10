@@ -32,7 +32,7 @@ const Login = () => {
         <Navbar/>
         <div className="container">
           <div class="login-box mt-10 sm:mt-10 ">
-            <h2>Login</h2>
+            <h2 className="text-center text-xl sm:text-2xl font-semibold">Login</h2>
             <form>
               <div class="user-box">
                 <input

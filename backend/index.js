@@ -33,6 +33,7 @@ app.post("/login", (req,res) =>{
         if(user){
            if(password === user.password) {
                res.send({message:"Login Successfull", user:user})
+               res.redirect('/Profile');
            }else {
                res.send({message:"Password didn't match"})
            }

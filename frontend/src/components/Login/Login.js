@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import axios from "axios";
-import { redirect, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 
 const Login = () => {
@@ -25,10 +25,10 @@ const Login = () => {
       .post("http://localhost:4000/login", user)
       .then((res) => {
         alert(res.data.message);
-        console.log(res.data.user)
+        // console.log(res.data.user);
         if (res.data.message == "Login Successfull") {
-          navigate(`/Profile`);
-          console.log(res.data);
+          navigate("/Profile", { state: { user: res.data.user } });
+          // console.log(res.data);
         }
       })
       .catch((err) => alert(`Some error has accured : ${err}`));
